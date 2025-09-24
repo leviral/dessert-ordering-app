@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+
+    <title>Frontend Mentor | Product list with cart</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&display=swap"
+          rel="stylesheet">
+  </head>
+  <body>
+    <div class="overlay" hidden></div>
+    <main>
+      <section class="grid-section">
+        <h1 class="headline">Desserts</h1>
+        <div class="grid-item">
+          <div class="grid-item__item-top">
+            <picture class="grid-item__image">
+              <source media="(min-width: 768px)" srcset="assets/images/image-waffle-tablet.jpg">
+              <source media="(min-width: 1024px)" srcset="assets/images/image-waffle-desktop.jpg">
+              <img src="assets/images/image-waffle-mobile.jpg" alt="">
+            </picture>
+            <div class="grid-item__btn-container">
+              <button class="grid-item__btn">Add to Cart</button>
+              <div class="grid-item__btn-switch">
+                <button class="decrement-cart"></button>
+                <p>0</p>
+                <button class="increment-cart"></button>
+              </div>
+            </div>
+          </div>
+          <div class="grid-item__item-bottom">
+            <p class="grid-item__subtitle">Waffle</p>
+            <h3 class="grid-item__title">Waffle with Berries</h3>
+            <h3 class="grid-item__price">$6.50</h3>
+          </div>
+        </div>
+
+        <div class="grid-item">
+          <div class="grid-item__item-top">
+            <picture class="grid-item__image">
+              <source media="(min-width: 768px)" srcset="assets/images/image-creme-brulee-tablet.jpg">
+              <source media="(min-width: 1024px)" srcset="assets/images/image-creme-brulee-desktop.jpg">
+              <img src="assets/images/image-creme-brulee-mobile.jpg" alt="">
+            </picture>
+            <div class="grid-item__btn-container">
+              <button class="grid-item__btn">Add to Cart</button>
+              <div class="grid-item__btn-switch">
+                <button class="decrement-cart"></button>
+                <p>0</p>
+                <button class="increment-cart"></button>
+              </div>
+            </div>
+          </div>
+          <div class="grid-item__item-bottom">
+            <p class="grid-item__subtitle">Crème Brûlée</p>
+            <h3 class="grid-item__title">Vanilla Bean Crème Brûlée</h3>
+            <h3 class="grid-item__price">$7.00</h3>
+          </div>
+        </div>
+
+        <div class="grid-item">
+          <div class="grid-item__item-top">
+            <picture class="grid-item__image">
+              <source media="(min-width: 768px)" srcset="assets/images/image-macaron-tablet.jpg">
+              <source media="(min-width: 1024px)" srcset="assets/images/image-macaron-desktop.jpg">
+              <img src="assets/images/image-macaron-mobile.jpg" alt="">
+            </picture>
+            <div class="grid-item__btn-container">
+              <button class="grid-item__btn">Add to Cart</button>
+              <div class="grid-item__btn-switch">
+                <button class="decrement-cart"></button>
+                <p>0</p>
+                <button class="increment-cart"></button>
+              </div>
+            </div>
+          </div>
+          <div class="grid-item__item-bottom">
+            <p class="grid-item__subtitle">Macaron</p>
+            <h3 class="grid-item__title">Macaron Mix of Five</h3>
+            <h3 class="grid-item__price">$8.00</h3>
+          </div>
+        </div>
+
+        <div class="grid-item">
+          <div class="grid-item__item-top">
+            <picture class="grid-item__image">
+              <source media="(min-width: 768px)" srcset="assets/images/image-tiramisu-tablet.jpg">
+              <source media="(min-width: 1024px)" srcset="assets/images/image-tiramisu-desktop.jpg">
+              <img src="assets/images/image-tiramisu-mobile.jpg" alt="">
+            </picture>
+            <div class="grid-item__btn-container">
+              <button class="grid-item__btn">Add to Cart</button>
+              <div class="grid-item__btn-switch">
+                <button class="decrement-cart"></button>
+                <p>0</p>
+                <button class="increment-cart"></button>
+              </div>
+            </div>
+          </div>
+          <div class="grid-item__item-bottom">
+            <p class="grid-item__subtitle">Tiramisu</p>
+            <h3 class="grid-item__title">Classic Tiramisu</h3>
+            <h3 class="grid-item__price">$5.50</h3>
+          </div>
+        </div>
+
+        <div class="grid-item">
+          <div class="grid-item__item-top">
+            <picture class="grid-item__image">
+              <source media="(min-width: 768px)" srcset="assets/images/image-baklava-tablet.jpg">
+              <source media="(min-width: 1024px)" srcset="assets/images/image-baklava-desktop.jpg">
+              <img src="assets/images/image-baklava-mobile.jpg" alt="">
+            </picture>
+            <div class="grid-item__btn-container">
+              <button class="grid-item__btn">Add to Cart</button>
+              <div class="grid-item__btn-switch">
+                <button class="decrement-cart"></button>
+                <p>0</p>
+                <button class="increment-cart"></button>
+              </div>
+            </div>
+          </div>
+          <div class="grid-item__item-bottom">
+            <p class="grid-item__subtitle">Baklava</p>
+            <h3 class="grid-item__title">Pistachio Baklava</h3>
+            <h3 class="grid-item__price">$4.00</h3>
+          </div>
+        </div>
+
+        <div class="grid-item">
+          <div class="grid-item__item-top">
+            <picture class="grid-item__image">
+              <source media="(min-width: 768px)" srcset="assets/images/image-meringue-tablet.jpg">
+              <source media="(min-width: 1024px)" srcset="assets/images/image-meringue-desktop.jpg">
+              <img src="assets/images/image-meringue-mobile.jpg" alt="">
+            </picture>
+            <div class="grid-item__btn-container">
+              <button class="grid-item__btn">Add to Cart</button>
+              <div class="grid-item__btn-switch">
+                <button class="decrement-cart"></button>
+                <p>0</p>
+                <button class="increment-cart"></button>
+              </div>
+            </div>
+          </div>
+          <div class="grid-item__item-bottom">
+            <p class="grid-item__subtitle">Pie</p>
+            <h3 class="grid-item__title">Lemon Meringue Pie</h3>
+            <h3 class="grid-item__price">$5.00</h3>
+          </div>
+        </div>
+
+        <div class="grid-item">
+          <div class="grid-item__item-top">
+            <picture class="grid-item__image">
+              <source media="(min-width: 768px)" srcset="assets/images/image-cake-tablet.jpg">
+              <source media="(min-width: 1024px)" srcset="assets/images/image-cake-desktop.jpg">
+              <img src="assets/images/image-cake-mobile.jpg" alt="">
+            </picture>
+            <div class="grid-item__btn-container">
+              <button class="grid-item__btn">Add to Cart</button>
+              <div class="grid-item__btn-switch">
+                <button class="decrement-cart"></button>
+                <p>0</p>
+                <button class="increment-cart"></button>
+              </div>
+            </div>
+          </div>
+          <div class="grid-item__item-bottom">
+            <p class="grid-item__subtitle">Cake</p>
+            <h3 class="grid-item__title">Red Velvet Cake</h3>
+            <h3 class="grid-item__price">$4.50</h3>
+          </div>
+        </div>
+
+        <div class="grid-item">
+          <div class="grid-item__item-top">
+            <picture class="grid-item__image">
+              <source media="(min-width: 768px)" srcset="assets/images/image-brownie-tablet.jpg">
+              <source media="(min-width: 1024px)" srcset="assets/images/image-brownie-desktop.jpg">
+              <img src="assets/images/image-brownie-mobile.jpg" alt="">
+            </picture>
+            <div class="grid-item__btn-container">
+              <button class="grid-item__btn">Add to Cart</button>
+              <div class="grid-item__btn-switch">
+                <button class="decrement-cart"></button>
+                <p>0</p>
+                <button class="increment-cart"></button>
+              </div>
+            </div>
+          </div>
+          <div class="grid-item__item-bottom">
+            <p class="grid-item__subtitle">Brownie</p>
+            <h3 class="grid-item__title">Salted Caramel Brownie</h3>
+            <h3 class="grid-item__price">$4.50</h3>
+          </div>
+        </div>
+
+        <div class="grid-item">
+          <div class="grid-item__item-top">
+            <picture class="grid-item__image">
+              <source media="(min-width: 768px)" srcset="assets/images/image-panna-cotta-tablet.jpg">
+              <source media="(min-width: 1024px)" srcset="assets/images/image-panna-cotta-desktop.jpg">
+              <img src="assets/images/image-panna-cotta-mobile.jpg" alt="">
+            </picture>
+            <div class="grid-item__btn-container">
+              <button class="grid-item__btn">Add to Cart</button>
+              <div class="grid-item__btn-switch">
+                <button class="decrement-cart"></button>
+                <p>0</p>
+                <button class="increment-cart"></button>
+              </div>
+            </div>
+          </div>
+          <div class="grid-item__item-bottom">
+            <p class="grid-item__subtitle">Panna Cotta</p>
+            <h3 class="grid-item__title">Vanilla Panna Cotta</h3>
+            <h3 class="grid-item__price">$6.50</h3>
+          </div>
+        </div>
+      </section>
+
+      <section class="cart-section">
+        <h2 class="cart__quantity">Your Cart (<span class="cart__quantity-counter">0</span>)</h2>
+        <div class="cart__image"></div>
+        <p class="cart__placeholder">Your added items will appear here</p>
+        <div class="cart-item__container">
+          <div class="cart-item__grid"></div>
+          <div class="cart-item__costs">
+            <p>Order Total</p>
+            <h2 class="cart-item__total-price">$0.00</h2>
+          </div>
+          <div class="delivery-neutral">
+            <p>This is a <span>carbon-neutral</span> delivery</p>
+          </div>
+          <button type="submit" class="cart-item__checkout checkout-style">Confirm Order</button>
+        </div>
+      </section>
+    </main>
+    <div class="checkout-container">
+      <h1 class="checkout-heading">Order Confirmed</h1>
+      <h3>We hope you enjoy your food!</h3>
+
+      <div class="cart-item__container">
+        <div class="cart-item__grid">
+        </div>
+        <div class="cart-item__costs">
+          <p>Order Total</p>
+          <h2 class="cart-item__total-price"></h2>
+        </div>
+      </div>
+      <button class="checkout-style new-order">Start New Order</button>
+    </div>
+    <footer id="footer">
+      <div class="attribution">
+        <div>Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+        </div>
+        <div>
+          Coded by <a class="author" href="https://github.com/leviral">leviral</a>.
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
