@@ -37,8 +37,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Frontend Mentor]()*
-- Live Site URL: [Netlify]()*
+- Solution URL: [Frontend Mentor](https://www.frontendmentor.io/solutions/dessert-ordering-app-cssjs-frontend-project-Wg1ulNYgdQ)
+- Live Site URL: [Netlify](https://68d43479549811007ed0791e--effortless-churros-cfcb4a.netlify.app/)
 
 ### Features
 
